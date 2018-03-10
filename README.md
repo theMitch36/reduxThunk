@@ -13,3 +13,5 @@ Redux Thunk Notes:
     a. the dispatch method is apart of the redux store that contains the apps state.    
     b. when we call an action creator that returns an action, the action is passed into the dispatch method
     c. the dispatch method is a big funnel, that takes in an action and makes sure it gets passed to all the reducers => new application state
+6. when our action creator sends an action to our reducers, it is expecting it to come across as a returned Object, but Redux Thunk allows us to return a function to our reducers for the async calls
+    a. the functions takes 2 arguments, dispatch method &     
